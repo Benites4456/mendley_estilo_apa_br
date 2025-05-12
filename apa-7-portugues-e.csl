@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>APA 7 Português - com "e"</title>
+    <id>http://www.zotero.org/styles/apa-7-portugues-e</id>
+    <link href="http://www.zotero.org/styles/apa-7-portugues-e" rel="self"/>
+    <author>
+      <name>OpenAI</name>
+    </author>
+    <category citation-format="author-date"/>
+    <summary>APA 7ª edição com conjunção 'e' no lugar de '&' para citações em português</summary>
+    <updated>2025-05-12T00:00:00+00:00</updated>
+  </info>
+  <locale xml:lang="pt-BR">
+    <terms>
+      <term name="et-al">et al.</term>
+    </terms>
+  </locale>
+  <macro name="author">
+    <group delimiter=", ">
+      <names variable="author">
+        <name and="text" delimiter=", " initialize-with=". " name-as-sort-order="first"/>
+        <label form="short" prefix=", "/>
+      </names>
+    </group>
+  </macro>
+  <citation>
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <group delimiter=" ">
+        <text macro="author"/>
+        <date variable="issued">
+          <date-part name="year"/>
+        </date>
+      </group>
+    </layout>
+  </citation>
+</style>
